@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index page</title>
-</head>
-<body>
+  </head>
+  <body>
     @@include('components/header.html')
-
+    <section class="info">
+      <div class="info__avatar">
+        <img
+          src="/src/images/photo_2022-04-03_02-43-56.jpg"
+          alt=""
+          class="info__photo"
+        />
+      </div>
+      <div class="info__main-title-wrap">
+        <h1 class="info__main-title">Kamol Abduvakhobov</h1>
+      </div>
+      <div class="info__skills-wrap">
+        <h2 class="info__skills"></h2>
+      </div>
+      <li class="info__social-media">
+        <ul class="info__instagram"></ul>
+        <ul class="info__vk"></ul>
+        <ul class="info__telegram"></ul>
+        <ul class="info__github"></ul>
+      </li>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__title-wrap">
+        <h2 class="portfolio__title">References</h2>
+      </div>
+      <ul class="portfolio__examples">
+        <div class="portfolio__example-wrap">
+          <li class="portfolio__example"></li>
+        </div>
+        <div class="portfolio__example-wrap">
+          <li class="portfolio__example"></li>
+        </div>
+        <div class="portfolio__example-wrap">
+          <li class="portfolio__example"></li>
+        </div>
+        <div class="portfolio__example-wrap">
+          <li class="portfolio__example"></li>
+        </div>
+      </ul>
+    </section>
+    <section class="blogs">
+      <div class="blogs__wrap">
+        <div class="blogs__name-wrap">
+          <h2 class="blogs__name"></h2>
+        </div>
+        <div class="blogs__content-wrap">
+          <div class="blogs__content">
+            <div class="blogs__img-wrap">
+              <img src="" alt="" class="blogs__img" />
+            </div>
+            <h2 class="blogs__link-title"></h2>
+            <p class="blogs__link-text"></p>
+          </div>
+          <div class="blogs__content">
+            <div class="blogs__img-wrap">
+              <img src="" alt="" class="blogs__img" />
+            </div>
+            <h2 class="blogs__text--bold"></h2>
+            <p class="blogs__text"></p>
+          </div>
+          <div class="blogs__content">
+            <div class="blogs__img-wrap">
+              <img src="" alt="" class="blogs__img" />
+            </div>
+            <h2 class="blogs__text--bold"></h2>
+            <p class="blogs__text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="links">
+      <div class="links-wrap">
+        <div class="links__name-wrap">
+          <h2 class="links__name">My Links</h2>
+        </div>
+        <div class="links__content-wrap">
+          <div class="links__icon-wrap">
+            <img src="" alt="" class="links__icon" />
+          </div>
+          <div class="links__text-wrap">
+            <h2 class="links__text links__text--bold"></h2>
+            <p class="links__text"></p>
+          </div>
+        </div>
+        <div class="links__content-wrap">
+          <div class="links__icon-wrap">
+            <img src="" alt="" class="links__icon" />
+          </div>
+          <div class="links__text-wrap">
+            <h2 class="links__text links__text--bold"></h2>
+            <p class="links__text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
     @@include('components/footer.html')
-</body>
+  </body>
 </html>

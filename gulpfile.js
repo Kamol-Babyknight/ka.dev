@@ -30,7 +30,7 @@ export function scss() {
     .pipe(autoprefixer())
     .pipe(csso())
     .pipe(concat('styles.css'))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css'));gu
 }
 
 export async function clear() {
