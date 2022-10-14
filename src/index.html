@@ -8,100 +8,102 @@
   </head>
   <body>
     @@include('components/header.html')
-    <section class="info">
-      <div class="info__avatar">
+    <section class="profile">
+      <div class="profile__avatar">
         <img
           src="/src/images/photo_2022-04-03_02-43-56.jpg"
           alt=""
-          class="info__photo"
+          class="profile__photo"
         />
       </div>
-      <div class="info__main-title-wrap">
-        <h1 class="info__main-title">Kamol Abduvakhobov</h1>
+      <div class="profile__main-title-wrap">
+        <h1 class="profile__main-title">Kamol Abduvakhobov</h1>
       </div>
-      <div class="info__skills-wrap">
-        <h2 class="info__skills"></h2>
+      <div class="profile__skills-wrap">
+        <h2 class="profile__skills"></h2>
       </div>
-      <li class="info__social-media">
-        <ul class="info__instagram"></ul>
-        <ul class="info__vk"></ul>
-        <ul class="info__telegram"></ul>
-        <ul class="info__github"></ul>
-      </li>
-    </section>
-    <section class="portfolio">
-      <div class="portfolio__title-wrap">
-        <h2 class="portfolio__title">References</h2>
-      </div>
-      <ul class="portfolio__examples">
-        <div class="portfolio__example-wrap">
-          <li class="portfolio__example"></li>
-        </div>
-        <div class="portfolio__example-wrap">
-          <li class="portfolio__example"></li>
-        </div>
-        <div class="portfolio__example-wrap">
-          <li class="portfolio__example"></li>
-        </div>
-        <div class="portfolio__example-wrap">
-          <li class="portfolio__example"></li>
-        </div>
+      <ul class="sharing__list">
+        <li class="sharing__item"></li>
+        <li class="sharing__item"></li>
+        <li class="sharing__item"></li>
+        <li class="sharing__item"></li>
       </ul>
+    </div>
+    </section>
+    <section class="projects">
+      <div class="projects__title-wrap">
+        <h2 class="projects__title">References</h2>
+      </div>
+      <div class="projects__list-wrap">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <div class="project"></div>
+          </li>
+          <li class="projects__item">
+            <div class="project"></div>
+          </li>
+          <li class="projects__item">
+            <div class="project"></div>
+          </li>
+          <li class="projects__item">
+            <div class="project"></div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="blogs">
-      <div class="blogs__wrap">
-        <div class="blogs__name-wrap">
-          <h2 class="blogs__name"></h2>
+      <div class="wrapper">
+        <div class="wrapper__title-wrap">
+          <h2 class="wrapper__title">Blogs</h2>
         </div>
-        <div class="blogs__content-wrap">
-          <div class="blogs__content">
-            <div class="blogs__img-wrap">
-              <img src="" alt="" class="blogs__img" />
-            </div>
-            <h2 class="blogs__link-title"></h2>
-            <p class="blogs__link-text"></p>
+      <div class="wrapper__list">
+        <div class="wrapper__item">
+          <div class="wrapper__img-wrap">
+            <img src="" alt="" class="wrapper__img">
           </div>
-          <div class="blogs__content">
-            <div class="blogs__img-wrap">
-              <img src="" alt="" class="blogs__img" />
-            </div>
-            <h2 class="blogs__text--bold"></h2>
-            <p class="blogs__text"></p>
+          <div class="wrapper__texts">
+            <h2 class="wrapper__item-title"></h2>
+            <p class="wrapper__item-text"></p>
           </div>
-          <div class="blogs__content">
-            <div class="blogs__img-wrap">
-              <img src="" alt="" class="blogs__img" />
-            </div>
-            <h2 class="blogs__text--bold"></h2>
-            <p class="blogs__text"></p>
+        </div>
+        <div class="wrapper__item">
+          <div class="wrapper__img-wrap">
+            <img src="" alt="" class="wrapper__img">
+          </div>
+          <div class="wrapper__texts">
+            <h2 class="wrapper__item-title"></h2>
+            <p class="wrapper__item-text"></p>
           </div>
         </div>
       </div>
+    </div>
     </section>
     <section class="links">
-      <div class="links-wrap">
-        <div class="links__name-wrap">
-          <h2 class="links__name">My Links</h2>
+      <div class="wrapper">
+        <div class="wrapper__title-wrap">
+          <h2 class="wrapper__title">Blogs</h2>
         </div>
-        <div class="links__content-wrap">
-          <div class="links__icon-wrap">
-            <img src="" alt="" class="links__icon" />
+      <div class="wrapper__list">
+        <div class="wrapper__item">
+          <div class="wrapper__img-wrap">
+            <img src="" alt="" class="wrapper__img">
           </div>
-          <div class="links__text-wrap">
-            <h2 class="links__text links__text--bold"></h2>
-            <p class="links__text"></p>
+          <div class="wrapper__texts">
+            <h2 class="wrapper__item-title"></h2>
+            <p class="wrapper__item-text"></p>
           </div>
         </div>
-        <div class="links__content-wrap">
-          <div class="links__icon-wrap">
-            <img src="" alt="" class="links__icon" />
+        <div class="wrapper__item">
+          <div class="wrapper__img-wrap">
+            <img src="" alt="" class="wrapper__img">
           </div>
-          <div class="links__text-wrap">
-            <h2 class="links__text links__text--bold"></h2>
-            <p class="links__text"></p>
+          <div class="wrapper__texts">
+            <h2 class="wrapper__item-title"></h2>
+            <p class="wrapper__item-text"></p>
           </div>
         </div>
       </div>
+    </div>
     </section>
     @@include('components/footer.html')
   </body>
