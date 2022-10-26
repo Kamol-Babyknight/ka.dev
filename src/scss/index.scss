@@ -26,9 +26,13 @@ button{
     margin: 0 auto;
 }
 .profile__avatar{
-    border: 0px;
-    border-radius: 150px;
+    border: 1px;
+    border-radius: 50%;
     background-color: red;
+    display: flex;
+}
+.profile__photo{
+    
 }
 .sharing__item{
     width: 50px;
