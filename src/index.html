@@ -1,14 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Index page</title>
-</head>
-<body>
+  </head>
+  <body>
     @@include('components/header.html')
-
+    <section class="profile">
+      <div class="profile__avatar">
+        <img
+          src="/images/photo_2022-04-03_02-43-56.jpg"
+          alt=""
+          class="profile__photo"
+        />
+      </div>
+      <div class="profile__main-title-wrap">
+        <h1 class="profile__main-title">Kamol Abduvakhobov</h1>
+      </div>
+      <div class="profile__skills-wrap">
+        <h2 class="profile__skills">Web Developer | Physicist | Gamer</h2>
+      </div>
+      <div class="sharing">
+        <ul class="sharing__list">
+          <li class="sharing__item">
+            <!-- instagram -->
+          </li>
+          <li class="sharing__item">
+            <!-- vk -->
+          </li>
+          <li class="sharing__item">
+            <!-- twitch -->
+          </li>
+          <li class="sharing__item">
+            <!-- telegram -->
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__title-wrap">
+        <h2 class="projects__title">References</h2>
+      </div>
+      <div class="projects__list-wrap">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <div class="project">
+              <div class="project__preview">
+                <img src="" alt="" class="project__preview-img" />
+              </div>
+              <div class="project__text">
+                <h2 class="project__title"></h2>
+                <p class="project__description"></p>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="project">
+              <div class="project__info">
+                <img src="" alt="" class="project__img" />
+              </div>
+              <div class="project__text">
+                <h2 class="project__title"></h2>
+                <p class="project__description"></p>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="project">
+              <div class="project__preview">
+                <img src="" alt="" class="project__preview-img" />
+              </div>
+              <div class="project__text">
+                <h2 class="project__title"></h2>
+                <p class="project__description"></p>
+              </div>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="project">
+              <div class="project__preview">
+                <img src="" alt="" class="project__preview-img" />
+              </div>
+              <div class="project__text">
+                <h2 class="project__title"></h2>
+                <p class="project__description"></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="blogs">
+      <div class="cards">
+        <div class="cards__title-wrap">
+          <h2 class="cards__title">Blogs</h2>
+        </div>
+        <ul class="cards__list">
+          <li class="cards__item">
+            <div class="card">
+              <div class="card__img-wrap">
+                <img src="" alt="" class="card__img" />
+              </div>
+              <div class="card__texts">
+                <h2 class="card__item-title"></h2>
+                <p class="card__item-text"></p>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card">
+              <div class="card__img-wrap">
+                <img src="" alt="" class="card__img" />
+              </div>
+              <div class="card__texts">
+                <h2 class="card__item-title"></h2>
+                <p class="card__item-text"></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="links">
+      <div class="cards">
+        <div class="cards__title-wrap">
+          <h2 class="cards__title">Blogs</h2>
+        </div>
+        <ul class="cards__list">
+          <li class="cards__item">
+            <div class="card">
+              <div class="card__img-wrap">
+                <img src="" alt="" class="card__img" />
+              </div>
+              <div class="card__info">
+                <h2 class="card__title"></h2>
+                <p class="card__text"></p>
+              </div>
+            </div>
+          </li>
+          <li class="cards__item">
+            <div class="card">
+              <div class="card__img-wrap">
+                <img src="" alt="" class="card__img" />
+              </div>
+              <div class="card__info">
+                <h2 class="card__title"></h2>
+                <p class="card__text"></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     @@include('components/footer.html')
-</body>
+  </body>
 </html>
