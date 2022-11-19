@@ -4,142 +4,224 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Index page</title>
   </head>
   <body>
-    @@include('components/header.html')
-    <section class="profile">
-      <div class="profile-wrap">
-      <div class="profile__avatar">
-        <img
-          src="/images/photo_2022-04-03_02-43-56.jpg"
-          alt=""
-          class="profile__photo"
-        />
-      </div>
-      <div class="profile__main-title-wrap">
-        <h1 class="profile__main-title">Kamol Abduvakhobov</h1>
-      </div>
-      <div class="profile__skills-wrap">
-        <h2 class="profile__skills">Web Developer | Physicist | Gamer</h2>
-      </div>
-      <div class="sharing">
-        <ul class="sharing__list">
-          <li class="sharing__item">
-            <img src="/images/svg/instagram-icon.svg" alt="" class="sharing__img">
-          </li>
-          <li class="sharing__item">
-            <img src="/images/svg/telegram-icon.svg" alt="" class="sharing__img">
-          </li>
-          <li class="sharing__item">
-            <img src="/images/svg/vkicon.svg" alt="" class="sharing__img">
-          </li>
-          <li class="sharing__item">
-            <img src="/images/svg/discord-icon.svg" alt="" class="sharing__img">
-          </li>
-        </ul>
-      </div>
-    </div>
-    </section>
-    <section class="projects">
-      <div class="projects__title-wrap">
-        <h2 class="projects__title">References</h2>
-      </div>
-      <div class="projects__list-wrap">
-        <ul class="projects__list">
-          <li class="projects__item">
-            <div class="project">
-              <div class="project__preview">
-                <img src="/images/card-img.jpg" alt="" class="project__preview-img" />
-              </div>
-              <div class="project__info">
-                <h2 class="project__title">Grams28</h2>
-                <p class="project__description">Use code animation studio</p>
-              </div>
-            </div>
-          </li>
-          <li class="projects__item">
-            <div class="project">
-              <div class="project__preview">
-                <img src="/images/card-img.jpg" alt="" class="project__preview-img" />
-              </div>
-              <div class="project__info">
-                <h2 class="project__title">Grams28</h2>
-                <p class="project__description">Use code animation studio</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <div class="blogs-links">
-    <section class="blogs">
-      <div class="cards">
-        <div class="cards__title-wrap">
-          <h2 class="cards__title">Blogs</h2>
+    <div class="site-container">
+      @@include('components/header.html')
+      <section class="profile">
+        <div class="profile-wrap">
+          <div class="profile__avatar">
+            <img
+              src="/images/photo_2022-04-03_02-43-56.jpg"
+              alt=""
+              class="profile__photo"
+            />
+          </div>
+          <div class="profile__main-title-wrap">
+            <h1 class="profile__main-title">Kamol Abduvakhobov</h1>
+          </div>
+          <ul class="profile__skills">
+            <li class="profile__skill">Web Developer</li>
+            <li class="profile__skill">Physicist</li>
+            <li class="profile__skill">Gamer</li>
+          </ul>
+          <div class="sharing">
+            <ul class="sharing__list">
+              <li class="sharing__item">
+                <a
+                  href="https://www.instagram.com/kamol_186002686/"
+                  class="sharing__social"
+                >
+                  <img
+                    src="/images/svg/instagram-icon.svg"
+                    alt=""
+                    class="sharing__img"
+                  />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a href="https://t.me/Kamol_Babyknight" class="sharing__social">
+                  <img
+                    src="/images/svg/telegram-icon.svg"
+                    alt=""
+                    class="sharing__img"
+                  />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a
+                  href="https://vk.com/sweet_russian_pussy"
+                  class="sharing__social"
+                >
+                  <img
+                    src="/images/svg/vkicon.svg"
+                    alt=""
+                    class="sharing__img"
+                  />
+                </a>
+              </li>
+              <li class="sharing__item">
+                <a href="https://discord.gg/cyNnDBzP" class="sharing__social">
+                  <img
+                    src="/images/svg/discord-icon.svg"
+                    alt=""
+                    class="sharing__img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="cards__list">
-          <li class="cards__item">
-            <div class="card">
-              <div class="card__img-wrap">
-                <img src="/images/blogs-img-1.jpg" alt="" class="card__img" />
-              </div>
-              <div class="card__info">
-                <h2 class="card__title">Exploring Creativity</h2>
-                <p class="card__text">Use code animation studio, Use code animation studio, Use code</p>
-              </div>
-            </div>
-          </li>
-          <li class="cards__item">
-            <div class="card">
-              <div class="card__img-wrap">
-                <img src="/images/blogs-img-2.jpg" alt="" class="card__img" />
-              </div>
-              <div class="card__info">
-                <h2 class="card__title">Exploring Creativity</h2>
-                <p class="card__text">Use code animation studio, Use code animation studio, Use code</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <div class="ca-img-wrap">
-      <img src="/images/ca-img.jpg" alt="" class="ca-img">
-    </div>
-    <section class="links">
-      <div class="cards">
-        <div class="cards__title-wrap">
-          <h2 class="cards__title">My Links</h2>
+      </section>
+      <section class="projects">
+        <div class="projects__title-wrap">
+          <h2 class="projects__title">References</h2>
         </div>
-        <ul class="cards__list">
-          <li class="cards__item">
-            <div class="card">
-              <div class="card__img-wrap">
-                <img src="/images/svg/youtube-icon.svg" alt="" class="card__img card__icon" />
+        <div class="projects__list-wrap">
+          <ul class="projects__list">
+            <li class="projects__item">
+              <div class="project">
+                <a href="#" class="projects__link">
+                  <div class="project__preview">
+                    <img
+                      src="/images/card-img.jpg"
+                      alt=""
+                      class="project__preview-img"
+                    />
+                  </div>
+                </a>
+                <div class="project__info">
+                  <h2 class="project__title">Grams28</h2>
+                  <p class="project__description">Use code animation studio</p>
+                </div>
               </div>
-              <div class="card__info">
-                <h2 class="card__title">Youtube</h2>
-                <p class="card__text">Use code animation studio, Use code animation studio, Use code</p>
+            </li>
+            <li class="projects__item">
+              <div class="project">
+                <a href="#" class="projects__link">
+                  <div class="project__preview">
+                    <img
+                      src="/images/card-img.jpg"
+                      alt=""
+                      class="project__preview-img"
+                    />
+                  </div>
+                </a>
+                <div class="project__info">
+                  <h2 class="project__title">Grams28</h2>
+                  <p class="project__description">Use code animation studio</p>
+                </div>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="blogs-links">
+        <section class="blogs">
+          <div class="cards">
+            <div class="cards__title-wrap">
+              <h2 class="cards__title">Blogs</h2>
             </div>
-          </li>
-          <li class="cards__item">
-            <div class="card">
-              <div class="card__img-wrap">
-                <img src="/images/svg/facebook-icon.svg" alt="" class="card__img card__icon" />
-              </div>
-              <div class="card__info">
-                <h2 class="card__title">Facebook</h2>
-                <p class="card__text">Use code animation studio, Use code animation studio, Use code</p>
-              </div>
+            <ul class="cards__list">
+              <li class="cards__item">
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrap">
+                      <img
+                        src="/images/blogs-img-1.jpg"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </a>
+                  <div class="card__info">
+                    <h2 class="card__title">Exploring Creativity</h2>
+                    <p class="card__text">
+                      Use code animation studio, Use code animation studio, Use
+                      code
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrap">
+                      <img
+                        src="/images/blogs-img-2.jpg"
+                        alt=""
+                        class="card__img"
+                      />
+                    </div>
+                  </a>
+                  <div class="card__info">
+                    <h2 class="card__title">Exploring Creativity</h2>
+                    <p class="card__text">
+                      Use code animation studio, Use code animation studio, Use
+                      code
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="logo-wrap">
+          <img src="/images/ca-img.jpg" alt="" class="logo-img" />
+        </div>
+        <section class="links">
+          <div class="cards">
+            <div class="cards__title-wrap">
+              <h2 class="cards__title">My Links</h2>
             </div>
-          </li>
-        </ul>
+            <ul class="cards__list">
+              <li class="cards__item">
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrap">
+                      <img
+                        src="/images/svg/youtube-icon.svg"
+                        alt=""
+                        class="card__img card__icon"
+                      />
+                    </div>
+                  </a>
+                  <div class="card__info">
+                    <h2 class="card__title">Youtube</h2>
+                    <p class="card__text">
+                      Use code animation studio, Use code animation studio, Use
+                      code
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="card">
+                  <a href="#" class="card__link">
+                    <div class="card__img-wrap">
+                      <img
+                        src="/images/svg/facebook-icon.svg"
+                        alt=""
+                        class="card__img card__icon"
+                      />
+                    </div>
+                  </a>
+                  <div class="card__info">
+                    <h2 class="card__title">Facebook</h2>
+                    <p class="card__text">
+                      Use code animation studio, Use code animation studio, Use
+                      code
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-    @@include('components/footer.html')
+      @@include('components/footer.html')
+    </div>
   </body>
 </html>
