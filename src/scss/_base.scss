@@ -12,23 +12,30 @@
   font-weight: 400;
   font-style: normal;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+}
 body {
   background-color: #fdfdfd;
   font-family: "InstagramSans";
   font-size: 26px;
 }
-a{
+a {
   text-decoration: none;
   color: #000000;
 }
-p,
-h2,
-ul,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -68,10 +75,8 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 525px;
   margin: 0 auto;
-  padding-top: 119px;
-  padding-bottom: 119px;
+  padding: 120px 30px;
 }
 
 .profile__avatar {
@@ -81,7 +86,7 @@ button {
   overflow: hidden;
 }
 .profile__main-title-wrap {
-text-align: center;
+  text-align: center;
 }
 .profile__main-title {
   font-family: "InstagramSans";
@@ -101,36 +106,16 @@ text-align: center;
   color: rgba(0, 0, 0, 0.5);
   list-style: none;
   position: relative;
-  &:not(:last-child)::after{
+  &:not(:last-child)::after {
     content: "";
     display: block;
     width: 2px;
     height: 28px;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    left: 65px;
+    right: -10px;
     bottom: -15px;
-    }
-  // &:nth-child(1)::after {
-  //   content: "";
-  //   display: block;
-  //   width: 2px;
-  //   height: 28px;
-  //   background-color: rgba(0, 0, 0, 0.5);
-  //   position: absolute;
-  //   left: 190px;
-  //   bottom: -15px;
-  // }
-  // &:nth-child(2)::after {
-  //   content: "";
-  //   display: block;
-  //   width: 2px;
-  //   height: 28px;
-  //   background-color: rgba(0, 0, 0, 0.5);
-  //   position: absolute;
-  //   left: 118px;
-  //   bottom: -15px;
-  // }
+  }
 }
 
 .profile__photo {
@@ -236,7 +221,7 @@ text-align: center;
   box-shadow: (0px 8px 100px rgba(0, 0, 0, 0.1));
   border-radius: 30px;
 }
-.card__link{
+.card__link {
   display: flex;
 }
 .card__text {
@@ -296,40 +281,40 @@ text-align: center;
     width: 160px;
     height: 160px;
   }
-  .profile__main-title{
+  .profile__main-title {
     font-size: 24px;
   }
-  .profile__skill{
+  .profile__skill {
     font-size: 15px;
   }
-  .sharing__item{
+  .sharing__item {
     width: 25px;
     height: 25px;
   }
-  .profile-wrap{
+  .profile-wrap {
     height: auto;
     padding-top: 69px;
     padding-bottom: 0;
   }
-  .profile__avatar{
+  .profile__avatar {
     margin-bottom: 30px;
   }
-  .profile__main-title-wrap{
+  .profile__main-title-wrap {
     margin-bottom: 40px;
   }
-  .profile__skills{
+  .profile__skills {
     margin-bottom: 37px;
   }
-  .profile__skill{
-    &:not(:last-child)::after{
+  .profile__skill {
+    &:not(:last-child)::after {
       content: "";
       display: block;
-      width: 2px;
-      height: 28px;
+      width: 1px;
+      height: 15px;
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
-      left: 65px;
-      bottom: -15px;
-      }  
+      right: -10px;
+      bottom: -8px;
+    }
   }
 }
