@@ -32,6 +32,9 @@ body {
   font-family: "InstagramSans";
   font-size: 26px;
 }
+h1{
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: #000000;
@@ -39,6 +42,7 @@ a {
 img {
   width: 100%;
   height: auto;
+  display:block;
 }
 button {
   background-color: white;
@@ -52,16 +56,16 @@ button {
   position: relative;
 }
 .header__add-button {
-  left: 4%;
+  left: 81px;
   position: absolute;
-  top: 119px;
+  top: 117px;
   width: 80px;
   height: 80px;
 }
 .header__share-button {
-  right: 4%;
+  right: 62px;
   position: absolute;
-  top: 119px;
+  top: 117px;
   width: 80px;
   height: 80px;
 }
@@ -84,25 +88,28 @@ button {
   width: 300px;
   height: 300px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .profile__main-title-wrap {
   text-align: center;
+  margin-bottom: 20px;
 }
 .profile__main-title {
   font-family: "InstagramSans";
   font-weight: 700;
   font-size: 54px;
-  line-height: 1;
+  line-height: 70px;
 }
 .profile__skills {
   display: flex;
   gap: 20px;
+  margin-bottom: 30px;
 }
 .profile__skill {
   font-family: "InstagramSans";
   font-weight: 400;
   font-size: 28px;
-  line-height: 0;
+  line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
   list-style: none;
   position: relative;
@@ -114,12 +121,15 @@ button {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     right: -10px;
-    bottom: -15px;
+    bottom: 5px;
   }
 }
 
 .profile__photo {
   object-fit: cover;
+}
+.sharing{
+  margin-bottom: 20px;
 }
 .sharing__item {
   width: 50px;
@@ -130,7 +140,7 @@ button {
 }
 .projects__title-wrap {
   display: flex;
-  margin-top: 25px;
+  margin-bottom: 72px;
 }
 .projects__title {
   margin: 0 auto;
@@ -144,8 +154,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 82px;
-  margin-top: 70px;
-  margin-bottom: 75px;
+  margin-bottom: 76px;
 }
 .projects__item {
   display: flex;
@@ -162,7 +171,6 @@ button {
 }
 .project__preview {
   width: 100%;
-  height: 395px;
   overflow: hidden;
 }
 .project__preview-img {
@@ -185,17 +193,19 @@ button {
   margin: 0 auto;
   font-family: "InstagramSans";
   font-weight: 400;
-  font-size: 26px;
   line-height: 33.8px;
 }
 .blogs-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-left: 35px;
+  padding-right: 15px;
+  gap:139px;
 }
 .cards {
   display: flex;
   flex-direction: column;
-  width: 612px;
+  max-width: 612px;
 }
 .cards__title-wrap {
   margin: 0 auto;
@@ -228,24 +238,22 @@ button {
   font-family: "InstagramSans";
   font-weight: 400;
   font-size: 23px;
+  line-height: 31px;
+  letter-spacing: 0.01em;
 }
 .card__title {
   font-family: "InstagramSans";
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
+  line-height: 35px;
+  margin-bottom: 12px;
 }
 .card__info {
-  display: flex;
-  flex-direction: column;
-  padding-left: 24px;
-  padding-right: 64px;
-  padding-top: 31px;
-  padding-bottom: 30px;
-  justify-content: space-evenly;
+  padding: 48px 64px 30px 24px;
 }
 .card__img-wrap {
-  width: 196px;
-  height: 204px;
+  width: 197px;
+  min-height: 204px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -266,6 +274,12 @@ button {
   top: 252px;
 }
 @media (min-width: 350px) and (max-width: 500px) {
+  .site-container{
+    max-width: 500px;
+  }
+  body{
+    font-size: 13px;
+  }
   .header__share-button {
     width: 24px;
     height: 24px;
@@ -316,5 +330,73 @@ button {
       right: -10px;
       bottom: -8px;
     }
+  }
+  .projects__item{
+    width: 227px;
+  }
+  .project{
+    width: 227px;
+    border-radius: 15px;
+  }
+  .projects__title{
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .projects__list{
+    gap: 17px;
+  }
+  .project__title{
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .project__info{
+    padding: 0;
+    padding-top: 4px;
+  }
+  .project__description{
+    line-height: 17px;
+    padding-bottom: 8px;
+  }
+  .blogs-links{
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+  .blogs{
+    margin: 0 auto;
+  }
+  .card{
+    border-radius: 15px;
+  }
+  .card__img-wrap{
+    width: 108px;
+    min-height: 0;
+  }
+  .card__title{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  .card__text{
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .card__info{
+    padding-top: 27px;
+    padding-left: 12px;
+    padding-right: 40px;
+    padding-bottom: 26px;
+  }
+  .card__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card .card__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .cards__list{
+    gap: 30px;
   }
 }

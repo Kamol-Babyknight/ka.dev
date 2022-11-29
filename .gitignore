@@ -397,3 +397,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# JetBrains indexes
+.idea/
