@@ -52,26 +52,30 @@ button {
   padding-bottom: 50px;
   overflow: hidden;
 }
-.header__wrap {
-  position: relative;
+.header{
+  position: absolute;
+  width: 100%;
+  top: 115px;
+}
+.header__wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
 }
 .header__add-button {
-  left: 81px;
-  position: absolute;
-  top: 117px;
   width: 80px;
   height: 80px;
 }
 .header__share-button {
-  right: 62px;
-  position: absolute;
-  top: 117px;
   width: 80px;
   height: 80px;
 }
 .sharing__list {
   list-style: none;
   display: flex;
+}
+.profile{
+  margin-bottom: 20px;
 }
 .profile-wrap {
   display: flex;
@@ -127,9 +131,6 @@ button {
 
 .profile__photo {
   object-fit: cover;
-}
-.sharing{
-  margin-bottom: 20px;
 }
 .sharing__item {
   width: 50px;
@@ -193,14 +194,14 @@ button {
   margin: 0 auto;
   font-family: "InstagramSans";
   font-weight: 400;
-  line-height: 33.8px;
+  line-height: 34px;
 }
 .blogs-links {
   display: flex;
   justify-content: center;
-  padding-left: 35px;
-  padding-right: 15px;
-  gap:139px;
+  padding: 0 20px;
+  gap: 416px;
+  position: relative;
 }
 .cards {
   display: flex;
@@ -215,7 +216,7 @@ button {
   font-family: "InstagramSans";
   font-weight: 700;
   font-size: 36px;
-  line-height: 46.8px;
+  line-height: 47px;
 }
 .cards__list {
   list-style: none;
@@ -230,6 +231,10 @@ button {
   display: flex;
   box-shadow: (0px 8px 100px rgba(0, 0, 0, 0.1));
   border-radius: 30px;
+}
+.card img{
+  height: 100%;
+  object-fit: cover;
 }
 .card__link {
   display: flex;
@@ -270,8 +275,10 @@ button {
 .logo {
   width: 136px;
   height: 136px;
-  position: relative;
-  top: 252px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-43%,-12%);
 }
 @media (min-width: 350px) and (max-width: 500px) {
   .site-container{
