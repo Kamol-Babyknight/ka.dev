@@ -196,12 +196,14 @@ button {
   font-weight: 400;
   line-height: 34px;
 }
-.blogs-links {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
-  gap: 416px;
+.blogs-links{
   position: relative;
+}
+.blogs-links__wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1920px;
 }
 .cards {
   display: flex;
@@ -231,6 +233,7 @@ button {
   display: flex;
   box-shadow: (0px 8px 100px rgba(0, 0, 0, 0.1));
   border-radius: 30px;
+  overflow: hidden;
 }
 .card img{
   height: 100%;
@@ -264,8 +267,6 @@ button {
   justify-content: center;
   align-items: center;
   background-color: rgba(60, 60, 60, 1);
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 30px;
   flex-shrink: 0;
 }
 .card .card__icon {
@@ -283,9 +284,16 @@ button {
 @media (min-width: 350px) and (max-width: 500px) {
   .site-container{
     max-width: 500px;
+    padding-bottom: 200px;
   }
   body{
     font-size: 13px;
+  }
+  .header{
+    top:68px;
+  }
+  .header__wrap{
+    padding: 0 32px;
   }
   .header__share-button {
     width: 24px;
@@ -298,9 +306,13 @@ button {
   .icon-button {
     display: contents;
   }
+  .profile{
+    margin-bottom: 40px;
+  }
   .profile__avatar {
     width: 160px;
     height: 160px;
+    margin-bottom: 30px;
   }
   .profile__main-title {
     font-size: 24px;
@@ -317,14 +329,14 @@ button {
     padding-top: 69px;
     padding-bottom: 0;
   }
-  .profile__avatar {
-    margin-bottom: 30px;
-  }
   .profile__main-title-wrap {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+  }
+  .profile__main-title{
+    line-height: 31px;
   }
   .profile__skills {
-    margin-bottom: 37px;
+    margin-bottom: 17px;
   }
   .profile__skill {
     &:not(:last-child)::after {
@@ -332,10 +344,11 @@ button {
       display: block;
       width: 1px;
       height: 15px;
+      line-height: 19px;
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
       right: -10px;
-      bottom: -8px;
+      bottom: 10px;
     }
   }
   .projects__item{
@@ -344,6 +357,9 @@ button {
   .project{
     width: 227px;
     border-radius: 15px;
+  }
+  .projects__title-wrap{
+    margin-bottom: 5px;
   }
   .projects__title{
     font-size: 20px;
@@ -374,6 +390,7 @@ button {
   }
   .card{
     border-radius: 15px;
+    overflow:hidden;
   }
   .card__img-wrap{
     width: 108px;
@@ -391,7 +408,7 @@ button {
   .card__info{
     padding-top: 27px;
     padding-left: 12px;
-    padding-right: 40px;
+    padding-right: 33px;
     padding-bottom: 26px;
   }
   .card__img{
@@ -403,7 +420,26 @@ button {
     width: 50px;
     height: 50px;
   }
+  .cards__title{
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cards__title-wrap{
+    margin-bottom: 16px;
+  }
   .cards__list{
     gap: 30px;
+  }
+  .blogs-links__wrap{
+    flex-direction: column;
+  }
+  .blogs{
+    margin-bottom: 75px;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+    top: 100%;
+    transform: translateY(30%);
   }
 }
