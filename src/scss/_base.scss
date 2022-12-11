@@ -31,6 +31,7 @@ body {
   background-color: #fdfdfd;
   font-family: "InstagramSans";
   font-size: 26px;
+  line-height: 31px;
 }
 h1{
   margin: 0;
@@ -51,6 +52,7 @@ button {
 .site-container {
   padding-bottom: 50px;
   overflow: hidden;
+  max-width: 1920px;
 }
 .header{
   position: absolute;
@@ -202,8 +204,9 @@ button {
 .blogs-links__wrap{
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 140px;
   max-width: 1920px;
+  gap: 140px;
 }
 .cards {
   display: flex;
@@ -279,7 +282,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-43%,-12%);
+  transform: translate(-58px,-17px);
 }
 @media (min-width: 350px) and (max-width: 500px) {
   .site-container{
