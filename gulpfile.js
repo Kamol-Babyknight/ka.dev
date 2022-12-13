@@ -9,6 +9,7 @@ import concat from "gulp-concat";
 import autoprefixer from "gulp-autoprefixer";
 import sync from "browser-sync";
 
+
 const sass = gulgSass(dartSass);
 
 sync.create();
@@ -42,7 +43,9 @@ export function scss() {
 export function images() {
   return gulp.src("src/images/**/*.*").pipe(gulp.dest("dist/images"));
 }
-
+export function fonts() {
+  return gulp.src("src/fonts/**/*.{woff,woff2}").pipe(gulp.dest("dist/fonts"));
+}
 export async function clear() {
   return deleteSync("dist");
 }
@@ -56,6 +59,6 @@ function watch() {
   gulp.watch("src/images/**/*.*", gulp.series(images));
 }
 
-export const build = gulp.series(clear, images, html, scss);
+export const build = gulp.series(clear,fonts, images, html, scss);
 
 export const serve = gulp.series(build, watch);
