@@ -1,2 +1,16 @@
+@import "mixins";
 @import "vendor";
 @import "base";
+
+
+//компоненты
+@import "components/header";
+@import "components/profile";
+@import "components/sharing";
+@import "components/blogs-links";
+@import "components/card";
+@import "components/cards";
+@import "components/project";
+@import "components/projects";
+@import "components/logo";
+ 

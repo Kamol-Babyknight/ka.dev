@@ -1,0 +1,32 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 115px;
+  @include mobile(){
+    top: 68px;
+  }
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  @include mobile(){
+    padding: 0 32px;
+  }
+}
+.header__add-button {
+  width: 80px;
+  height: 80px;
+  @include mobile(){
+   width: 24px;
+   height: 24px; 
+  }
+}
+.header__share-button {
+  width: 80px;
+  height: 80px;
+  @include mobile(){
+   width: 24px;
+   height: 24px; 
+  }
+}
