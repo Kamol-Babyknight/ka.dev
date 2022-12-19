@@ -3,35 +3,42 @@
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0px 8px 100px -8px rgba(0, 0, 0, 0.1);
-  @include mobile() {
+
+  @include mobile {
     width: 227px;
     border-radius: 15px;
   }
 }
+
 .project__preview {
   width: 100%;
   overflow: hidden;
 }
+
 .project__preview-img {
   object-fit: cover;
 }
+
 .project__info {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 13px;
-  @include mobile() {
+
+  @include mobile {
     padding: 0;
     padding-top: 4px;
   }
 }
+
 .project__title {
   margin: 0 auto;
   font-family: "InstagramSans";
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
-  @include mobile() {
+
+  @include mobile {
     font-size: 15px;
     line-height: 19px;
     margin: 0;
@@ -39,12 +46,14 @@
     padding-right: 82px;
   }
 }
+
 .project__description {
   margin: 0 auto;
   font-family: "InstagramSans";
   font-weight: 400;
   line-height: 34px;
-  @include mobile() {
+  
+  @include mobile {
     line-height: 17px;
     padding-bottom: 8px;
     margin: 0;

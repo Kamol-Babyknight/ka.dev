@@ -1,38 +1,45 @@
 .projects__title-wrap {
   display: flex;
   margin-bottom: 72px;
-  @include mobile() {
+
+  @include mobile {
     margin-bottom: 5px;
   }
 }
+
 .projects__title {
   margin: 0 auto;
   font-family: "InstagramSans";
   font-weight: 700;
   font-size: 42px;
   line-height: 55px;
-  @include mobile() {
+
+  @include mobile {
     font-size: 20px;
     line-height: 26px;
   }
 }
+
 .projects__list {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 82px;
   margin-bottom: 76px;
-  @include mobile() {
+
+  @include mobile {
     gap: 17px;
   }
 }
+
 .projects__item {
   display: flex;
   flex-direction: column;
   width: 455px;
   height: auto;
   flex-shrink: 0;
-  @include mobile() {
+  
+  @include mobile {
     width: 227px;
   }
 }

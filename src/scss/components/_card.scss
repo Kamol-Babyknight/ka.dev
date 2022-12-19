@@ -4,7 +4,7 @@
   border-radius: 30px;
   overflow: hidden;
 
-  @include mobile() {
+  @include mobile {
     border-radius: 15px;
     overflow: hidden;
   }
@@ -14,7 +14,7 @@
   height: 100%;
   object-fit: cover;
 
-  @include mobile() {
+  @include mobile {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,7 +32,7 @@
   line-height: 31px;
   letter-spacing: 0.01em;
 
-  @include mobile() {
+  @include mobile {
     font-size: 13px;
     line-height: 17px;
   }
@@ -45,7 +45,7 @@
   line-height: 35px;
   margin-bottom: 12px;
 
-  @include mobile() {
+  @include mobile {
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 6px;
@@ -55,7 +55,7 @@
 .card__info {
   padding: 48px 64px 30px 24px;
 
-  @include mobile() {
+  @include mobile {
     padding-top: 27px;
     padding-left: 12px;
     padding-right: 33px;
@@ -73,7 +73,7 @@
   background-color: rgba(60, 60, 60, 1);
   flex-shrink: 0;
 
-  @include mobile() {
+  @include mobile {
     width: 108px;
     min-height: 0;
   }
@@ -83,7 +83,7 @@
   width: 100px;
   height: 100px;
 
-  @include mobile() {
+  @include mobile {
     width: 50px;
     height: 50px;
   }

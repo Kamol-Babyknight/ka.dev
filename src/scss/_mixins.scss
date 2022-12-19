@@ -1,4 +1,4 @@
-@mixin mobile(){
+@mixin mobile{
     @media (max-width: 767.8px) {
         @content;
     }

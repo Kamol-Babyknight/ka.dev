@@ -2,13 +2,15 @@
   list-style: none;
   display: flex;
 }
+
 .sharing__item {
   width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @include mobile() {
+  
+  @include mobile {
     width: 25px;
     height: 25px;
   }
