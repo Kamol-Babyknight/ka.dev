@@ -46,7 +46,7 @@
 }
 
 .profile__main-title {
-  font-family: "InstagramSans";
+  font-family: $instagram-sans-font;
   font-weight: 700;
   font-size: 54px;
   line-height: 70px;
@@ -66,7 +66,7 @@
 }
 
 .profile__skill {
-  font-family: "InstagramSans";
+  font-family: $instagram-sans-font;
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;

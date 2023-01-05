@@ -26,7 +26,7 @@
 }
 
 .card__text {
-  font-family: "InstagramSans";
+  font-family: $instagram-sans-font;
   font-weight: 400;
   font-size: 23px;
   line-height: 31px;
@@ -39,7 +39,7 @@
 }
 
 .card__title {
-  font-family: "InstagramSans";
+  font-family: $instagram-sans-font;
   font-weight: 700;
   font-size: 27px;
   line-height: 35px;

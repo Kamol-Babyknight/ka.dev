@@ -33,7 +33,7 @@
 
 .project__title {
   margin: 0 auto;
-  font-family: "InstagramSans";
+  font-family: $instagram-sans-font;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -49,7 +49,7 @@
 
 .project__description {
   margin: 0 auto;
-  font-family: "InstagramSans";
+  font-family: $instagram-sans-font;
   font-weight: 400;
   line-height: 34px;
   
