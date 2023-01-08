@@ -1,0 +1,23 @@
+.blogs-links {
+  position: relative;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+}
+
+.blogs-links__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  max-width: 1920px;
+  gap: 140px;
+
+  @include mobile {
+    flex-direction: column;
+    padding:0;
+    gap:0;
+  }
+}

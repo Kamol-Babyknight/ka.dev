@@ -1,0 +1,40 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 612px;
+}
+
+.cards__title-wrap {
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+}
+.cards__title {
+  font-family: $instagram-sans-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+
+  @include mobile {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.cards__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 54px;
+  border-radius: 30px;
+  
+  @include mobile {
+    gap: 30px;
+    padding: 0 18px;
+  }
+}
