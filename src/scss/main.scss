@@ -1,9 +1,13 @@
 @import "mixins";
 @import "vendor";
 @import "variables";
+@import "functions/strip-units";
+@import "functions/responsive";
 @import "base";
 
-
+// //функции
+// @import "functions/strip-units";
+// @import "functions/responsive";
 
 //компоненты
 @import "components/header";

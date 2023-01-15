@@ -1,11 +1,11 @@
 .card {
   display: flex;
-  box-shadow: (0px 8px 100px rgba(0, 0, 0, 0.1));
-  border-radius: 30px;
+  box-shadow: (0 rem(8) rem(100) rgba(0, 0, 0, 0.1));
+  border-radius: rem(30);
   overflow: hidden;
 
   @include mobile {
-    border-radius: 15px;
+    border-radius: rem(15);
     overflow: hidden;
   }
 }
@@ -28,44 +28,44 @@
 .card__text {
   font-family: $instagram-sans-font;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 31px;
+  font-size: rem(23);
+  line-height: rem(31);
   letter-spacing: 0.01em;
 
   @include mobile {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: rem(13);
+    line-height: rem(17);
   }
 }
 
 .card__title {
   font-family: $instagram-sans-font;
   font-weight: 700;
-  font-size: 27px;
-  line-height: 35px;
-  margin-bottom: 12px;
+  font-size: rem(27);
+  line-height: rem(35);
+  margin-bottom: rem(12);
 
   @include mobile {
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 6px;
+    font-size: rem(15);
+    line-height: rem(20);
+    margin-bottom: rem(6);
   }
 }
 
 .card__info {
-  padding: 48px 64px 30px 24px;
+  padding: rem(48) rem(64) rem(30) rem(24);
 
   @include mobile {
-    padding-top: 27px;
-    padding-left: 12px;
-    padding-right: 33px;
-    padding-bottom: 26px;
+    padding-top: rem(27);
+    padding-left: rem(12);
+    padding-right: rem(33);
+    padding-bottom: rem(26);
   }
 }
 
 .card__img-wrap {
-  width: 197px;
-  min-height: 204px;
+  width: rem(197);
+  min-height: rem(204);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -74,17 +74,17 @@
   flex-shrink: 0;
 
   @include mobile {
-    width: 108px;
+    width: rem(108);
     min-height: 0;
   }
 }
 
 .card .card__icon {
-  width: 100px;
-  height: 100px;
+  width: rem(100);
+  height: rem(100);
 
   @include mobile {
-    width: 50px;
-    height: 50px;
+    width: rem(50);
+    height: rem(50);
   }
 }

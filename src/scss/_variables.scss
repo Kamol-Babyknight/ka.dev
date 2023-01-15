@@ -1,2 +1,12 @@
-$instagram-sans-font:"InstagramSans", "Arial", sans-serif;
+//sizes
+$default-root-font-size: 10;
+
+//fonts
+$instagram-sans-font: "InstagramSans", "Arial", sans-serif;
+
+//breakpoints
+$base-desktop-screen: 1920px;
 $mobile-screen: 767.8px;
+$min-mobile-screen: 375px;
+$min-desktop-screen: 1024px;
+$base-desktop-height: 768px;

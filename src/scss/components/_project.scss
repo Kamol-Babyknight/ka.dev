@@ -1,12 +1,12 @@
 .project {
-  width: 455px;
+  width: rem(455);
   overflow: hidden;
-  border-radius: 30px;
-  box-shadow: 0px 8px 100px -8px rgba(0, 0, 0, 0.1);
+  border-radius: rem(30);
+  box-shadow: 0 rem(8) rem(100) rem(-8) rgba(0, 0, 0, 0.1);
 
   @include mobile {
-    width: 227px;
-    border-radius: 15px;
+    width: rem(227);
+    border-radius: rem(15);
   }
 }
 
@@ -23,11 +23,11 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 13px;
+  padding: rem(13);
 
   @include mobile {
     padding: 0;
-    padding-top: 4px;
+    padding-top: rem(4);
   }
 }
 
@@ -35,15 +35,15 @@
   margin: 0 auto;
   font-family: $instagram-sans-font;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 39px;
+  font-size: rem(30);
+  line-height: rem(39);
 
   @include mobile {
-    font-size: 15px;
-    line-height: 19px;
+    font-size: rem(15);
+    line-height: rem(19);
     margin: 0;
-    padding-left: 73px;
-    padding-right: 82px;
+    padding-left: rem(73);
+    padding-right: rem(82);
   }
 }
 
@@ -51,13 +51,13 @@
   margin: 0 auto;
   font-family: $instagram-sans-font;
   font-weight: 400;
-  line-height: 34px;
+  line-height: rem(34);
   
   @include mobile {
-    line-height: 17px;
-    padding-bottom: 8px;
+    line-height: rem(17);
+    padding-bottom: rem(8);
     margin: 0;
-    padding-left: 48px;
-    padding-right: 34px;
+    padding-left: rem(48);
+    padding-right: rem(34);
   }
 }

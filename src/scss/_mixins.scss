@@ -3,3 +3,15 @@
         @content;
     }
 }
+
+@mixin scalable-desktop {
+    @media ( min-width: $min-desktop-screen ) and (max-width: $base-desktop-screen) {
+        @content;
+    }
+}
+
+@mixin scalable-mobile{
+    @media (min-width: $min-mobile-screen) and (max-width: $mobile-screen){
+        @content;
+    }
+}

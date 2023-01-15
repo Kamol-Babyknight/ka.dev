@@ -23,6 +23,14 @@
 
 html {
   box-sizing: border-box;
+  font-size: ($default-root-font-size)* 1px;
+  
+  @include scalable-desktop {
+    font-size: vw($default-root-font-size);
+  }
+  @include scalable-mobile{
+    font-size: vmin($default-root-font-size);
+  }
 }
 
 html,
@@ -34,11 +42,11 @@ body {
 body {
   background-color: #fdfdfd;
   font-family: $instagram-sans-font;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: rem(26);
+  line-height: rem(31);
 
   @include mobile{
-    font-size: 13px;
+    font-size: rem(13);
   }
 }
 
@@ -63,20 +71,24 @@ button {
 }
 
 .site-container {
-  padding-bottom: 50px;
+  padding-bottom: rem(50);
   overflow: hidden;
-  max-width: 1920px;
+  max-width: rem(1920);
   
  @include mobile{
-  max-width: 700px;
-  padding-bottom: 100px;
+  max-width: rem(700);
+  padding-bottom: rem(100);
  }
 }
   .blogs{
 
     @include mobile{
       margin: 0 auto;
-      margin-bottom: 76px;
+      margin-bottom: rem(76);
     }
   }
-
+  .links{
+    @include mobile{
+      margin: 0 auto;
+    }
+  }
