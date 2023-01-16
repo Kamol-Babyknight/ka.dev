@@ -2,7 +2,7 @@
     @return strip-units($value) / strip-units($base) * 1rem;
 }
 
-@function vmin($value, $base: $mobile-screen) {
+@function vmin($value, $base: $min-mobile-screen) {
     @return strip-units($value) / strip-units($base) * 100vmin;
 }
 
@@ -13,3 +13,4 @@
 @function vh($value, $base: $base-desktop-height) {
     @return strip-units($value) / strip-units($base) * 100vh;
 }
+

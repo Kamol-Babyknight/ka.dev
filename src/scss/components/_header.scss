@@ -4,7 +4,7 @@
   top: rem(115);
 
   @include mobile{
-    top: 68px;
+    top: rem(68) ;
   }
 }
 
@@ -14,7 +14,7 @@
   padding: 0 rem(80);
 
   @include mobile{
-    padding: 0 32px;
+    padding: 0 rem(32);
   }
 }
 
