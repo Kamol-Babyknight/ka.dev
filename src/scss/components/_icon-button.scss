@@ -1,0 +1,28 @@
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  width: rem(80);
+  height: rem(80);
+  transition-duration: 0.35s;
+
+  &:hover {
+    opacity: 0.6;
+    color: gray;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    opacity: 0.4;
+    transition-duration: 0.15s;
+    transform: scale(0.92);
+  }
+
+  @include mobile{
+   width: rem(24);
+   height: rem(24);
+  }
+}

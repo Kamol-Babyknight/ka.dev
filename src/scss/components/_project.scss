@@ -17,6 +17,11 @@
 
 .project__preview-img {
   object-fit: cover;
+  transition-duration: 0.35s;
+  &:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+  }
 }
 
 .project__info {

@@ -54,8 +54,8 @@ function watch() {
   sync.init({
     server: "./dist",
   });
-  gulp.watch("src/**.html", gulp.series(html)).on("change", sync.reload);
-  gulp.watch("src/scss/**.scss", gulp.series(scss)).on("change", sync.reload);
+  gulp.watch("src/**/**.html", gulp.series(html)).on("change", sync.reload);
+  gulp.watch("src/scss/**/**.scss", gulp.series(scss)).on("change", sync.reload);
   gulp.watch("src/images/**/*.*", gulp.series(images));
 }
 
