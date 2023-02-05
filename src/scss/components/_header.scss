@@ -18,7 +18,7 @@
   }
 }
 
-.header__add-button {
+.icon-button{
   width: rem(80);
   height: rem(80);
   &:hover{
@@ -28,22 +28,6 @@
     transition-duration: 0.5s;
   }
 
-  @include mobile{
-   width: rem(24);
-   height: rem(24); 
-  }
-}
-
-.header__share-button {
-  width: rem(80);
-  height: rem(80);
-  &:hover{
-    opacity: 0.5;
-    color: gray;
-    transform: scale(1.5);
-    transition-duration: 0.5s;
-  }
-  
   @include mobile{
    width: rem(24);
    height: rem(24); 
