@@ -1,39 +1,35 @@
 .header {
   position: absolute;
   width: 100%;
-  top: 115px;
+  top: rem(115);
 
   @include mobile{
-    top: 68px;
+    top: rem(68) ;
   }
 }
 
 .header__wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 rem(80);
 
   @include mobile{
-    padding: 0 32px;
+    padding: 0 rem(32);
   }
 }
 
-.header__add-button {
-  width: 80px;
-  height: 80px;
-
-  @include mobile{
-   width: 24px;
-   height: 24px; 
+.icon-button{
+  width: rem(80);
+  height: rem(80);
+  @include progressive-hover{
+    opacity: 0.5;
+    color: gray;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
   }
-}
 
-.header__share-button {
-  width: 80px;
-  height: 80px;
-  
   @include mobile{
-   width: 24px;
-   height: 24px; 
+   width: rem(24);
+   height: rem(24); 
   }
 }

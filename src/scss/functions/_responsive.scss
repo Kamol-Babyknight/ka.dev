@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@function rem($value, $base: $default-root-font-size) {
+    @return math.div(strip-units($value), strip-units($base)) * 1rem;
+}
+
+@function vmin($value, $base: $min-mobile-screen) {
+    @return math.div(strip-units($value), strip-units($base)) * 100vmin;
+}
+
+@function vw($value, $base: $base-desktop-screen) {
+    @return math.div(strip-units($value), strip-units($base)) * 100vw;
+}
+
+@function vh($value, $base: $base-desktop-height) {
+    @return math.div(strip-units($value), strip-units($base)) * 100vh;
+}
+

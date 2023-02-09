@@ -1,5 +1,25 @@
 @mixin mobile{
-    @media (max-width: $mobile-screen) {
+    @media (max-width: ($min-desktop-screen - 0.2px) ) {
         @content;
     }
 }
+
+@mixin scalable-desktop {
+    @media ( min-width: $min-desktop-screen ) and (max-width: $base-desktop-screen) {
+        @content;
+    }
+}
+
+@mixin scalable-mobile{
+    @media (min-width: $min-mobile-screen) and (max-width: ($min-desktop-screen - 0.2px)){
+        @content;
+    }
+}
+
+@mixin progressive-hover{
+    @media (hover: hover){
+        &:hover{
+            @content
+        }
+    }
+} 

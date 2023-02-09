@@ -1,12 +1,16 @@
 @import "mixins";
 @import "vendor";
 @import "variables";
+@import "functions";
 @import "base";
 
-
+// //функции
+// @import "functions/strip-units";
+// @import "functions/responsive";
 
 //компоненты
 @import "components/header";
+@import "components/icon-button";
 @import "components/profile";
 @import "components/sharing";
 @import "components/blogs-links";

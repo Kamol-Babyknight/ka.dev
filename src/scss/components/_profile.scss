@@ -1,8 +1,8 @@
 .profile {
-  margin-bottom: 20px;
+  margin-bottom: rem(20);
 
   @include mobile {
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
   }
 }
 
@@ -13,89 +13,89 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 120px 30px;
+  padding: rem(120) rem(30);
 
   @include mobile {
     height: auto;
-    padding-top: 69px;
+    padding-top: rem(69);
     padding-bottom: 0;
   }
 }
 
 .profile__avatar {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: rem(300);
+  height: rem(300);
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: rem(20);
 
   @include mobile {
-    width: 160px;
-    height: 160px;
-    margin-bottom: 30px;
+    width: rem(160);
+    height: rem(160);
+    margin-bottom: rem(30);
   }
 }
 
 .profile__main-title-wrap {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: rem(20);
 
   @include mobile {
-    margin-bottom: 15px;
+    margin-bottom: rem(15);
   }
 }
 
 .profile__main-title {
   font-family: $instagram-sans-font;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 70px;
+  font-size: rem(54);
+  line-height: rem(70);
 
   @include mobile {
-    font-size: 24px;
-    line-height: 31px;
+    font-size: rem(24);
+    line-height: rem(31);
   }
 }
 .profile__skills {
   display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
+  gap: rem(20);
+  margin-bottom: rem(30);
   @include mobile {
-    margin-bottom: 17px;
+    margin-bottom: rem(17);
   }
 }
 
 .profile__skill {
   font-family: $instagram-sans-font;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: rem(28);
+  line-height: rem(36);
   color: rgba(0, 0, 0, 0.5);
   list-style: none;
   position: relative;
   &:not(:last-child)::after {
     content: "";
     display: block;
-    width: 2px;
-    height: 28px;
+    width: rem(2);
+    height: rem(28);
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    right: -10px;
-    bottom: 5px; 
+    right: rem(-10);
+    bottom: rem(5); 
   }
   
   @include mobile {
-    font-size: 15px;
+    font-size: rem(15);
     &:not(:last-child)::after {
       content: "";
       display: block;
-      width: 1px;
-      height: 15px;
-      line-height: 19px;
+      width: rem(1);
+      height: rem(15);
+      line-height: rem(19);
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
-      right: -10px;
-      bottom: 10px;
+      right: rem(-10);
+      bottom: rem(10);
     }
   }
 }
