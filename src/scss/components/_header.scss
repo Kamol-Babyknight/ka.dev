@@ -21,10 +21,10 @@
 .icon-button{
   width: rem(80);
   height: rem(80);
-  &:hover{
+  @include progressive-hover{
     opacity: 0.5;
     color: gray;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition-duration: 0.5s;
   }
 

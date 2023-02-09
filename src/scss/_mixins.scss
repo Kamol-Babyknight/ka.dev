@@ -15,3 +15,11 @@
         @content;
     }
 }
+
+@mixin progressive-hover{
+    @media (hover: hover){
+        &:hover{
+            @content
+        }
+    }
+} 
